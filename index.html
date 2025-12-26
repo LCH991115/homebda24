@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>데이터 분석가 포트폴리오</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="nav-container">
+                <h1>데이터 분석가 포트폴리오</h1>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#visualization">Visualization</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button id="theme-toggle" aria-label="테마 토글">🌙</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="hero-content">
+                <h1>안녕하세요, 신입 데이터 분석가입니다</h1>
+                <p>데이터를 통해 현상을 구조적으로 이해하고 의미 있는 패턴을 발견하는 데 열정을 가지고 있습니다.</p>
+                <a href="#projects" class="cta-button">프로젝트 보기</a>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <p>저는 Python, SQL을 활용한 데이터 분석과 Excel을 이용한 정리 및 보고, Tableau를 활용한 시각화를 통해 분석 결과를 명확하게 전달하는 과정에 집중해 왔습니다.</p>
+                    <p>데이터의 크기나 도메인에 관계없이 문제를 분석 가능한 형태로 정리하고 재현 가능한 방식으로 결과를 도출하는 것을 목표로 합니다.</p>
+                    <p>데이터 분석은 문제 정의보다 구조 이해가 우선임을 경험했으며, 분석 결과를 재현 가능하게 정리하는 중요성과 기술보다 커뮤니케이션이 분석의 완성도를 높인다는 점을 깨달았습니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <div class="container">
+                <h2>Tech Stack</h2>
+                <div class="skills-grid">
+                    <div class="skill-card">
+                        <h3>Programming</h3>
+                        <p>Python (pandas, numpy, matplotlib, seaborn)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Database</h3>
+                        <p>SQL (JOIN, Subquery, Aggregation, Window Function)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Analysis</h3>
+                        <p>Excel (Pivot Table, 함수, 데이터 정리)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Visualization</h3>
+                        <p>Tableau (Dashboard, Story)</p>
+                    </div>
+                    <div class="skill-card">
+                        <h3>Tools</h3>
+                        <p>Git, GitHub, Jupyter Notebook</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="filter-tabs">
+                    <button class="tab-button active" data-filter="all">All</button>
+                    <button class="tab-button" data-filter="python">Python</button>
+                    <button class="tab-button" data-filter="sql">SQL</button>
+                    <button class="tab-button" data-filter="excel">Excel</button>
+                    <button class="tab-button" data-filter="tableau">Tableau</button>
+                </div>
+                <div class="projects-grid">
+                    <div class="project-card" data-tech="python">
+                        <h3>공개 데이터 탐색적 분석 (EDA)</h3>
+                        <p class="project-summary">다양한 형태의 공개 데이터를 활용하여 데이터 구조 이해 및 기본적인 패턴을 탐색</p>
+                        <button class="expand-btn">자세히 보기</button>
+                        <div class="project-details">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">목표 (Goal)</button>
+                                    <div class="accordion-content">
+                                        <p>데이터 분포 및 특성 파악, 주요 변수 간 관계 분석, 이상치 및 결측치 처리 경험</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">데이터 (Data)</button>
+                                    <div class="accordion-content">
+                                        <p>공개 데이터셋 (가상 데이터)</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">방법 (Method)</button>
+                                    <div class="accordion-content">
+                                        <p>Python(pandas)을 활용한 데이터 로딩 및 정제, 수치형/범주형 변수 분리 분석, 시각화를 통한 패턴 확인</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">결과 (Results)</button>
+                                    <div class="accordion-content">
+                                        <p>변수 분포 히스토그램, 상관관계 히트맵, 그룹별 평균 비교</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">제안 (Recommendation)</button>
+                                    <div class="accordion-content">
+                                        <p>데이터 전처리의 중요성 이해, 시각화를 통한 패턴 인식 능력 향상</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">사용 기술 (Tech)</button>
+                                    <div class="accordion-content">
+                                        <p>Python, pandas, matplotlib, seaborn</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-tech="sql">
+                        <h3>SQL 기반 데이터 분석 프로젝트</h3>
+                        <p class="project-summary">관계형 데이터베이스 구조를 가정한 데이터 분석, SQL 쿼리를 통한 데이터 집계 및 분석</p>
+                        <button class="expand-btn">자세히 보기</button>
+                        <div class="project-details">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">목표 (Goal)</button>
+                                    <div class="accordion-content">
+                                        <p>복수 테이블 조인을 통한 데이터 추출, 집계 함수 및 윈도우 함수 활용</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">데이터 (Data)</button>
+                                    <div class="accordion-content">
+                                        <p>관계형 데이터베이스 샘플 데이터</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">방법 (Method)</button>
+                                    <div class="accordion-content">
+                                        <p>그룹별 통계량 계산, 기간별 데이터 비교, Top-N 분석</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">결과 (Results)</button>
+                                    <div class="accordion-content">
+                                        <p>SQL 쿼리 예시: 그룹별 카운트 및 평균 계산</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">제안 (Recommendation)</button>
+                                    <div class="accordion-content">
+                                        <p>SQL을 활용한 데이터 접근 및 분석 능력 강화, 복잡한 쿼리 구조 이해</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">사용 기술 (Tech)</button>
+                                    <div class="accordion-content">
+                                        <p>SQL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-tech="excel">
+                        <h3>Excel을 활용한 데이터 정리 및 리포트 작성</h3>
+                        <p class="project-summary">원본 데이터를 Excel로 정리하여 분석 결과를 직관적으로 전달하는 리포트 작성</p>
+                        <button class="expand-btn">자세히 보기</button>
+                        <div class="project-details">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">목표 (Goal)</button>
+                                    <div class="accordion-content">
+                                        <p>데이터 정합성 확보, 반복 업무를 고려한 구조 설계</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">데이터 (Data)</button>
+                                    <div class="accordion-content">
+                                        <p>원본 데이터셋</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">방법 (Method)</button>
+                                    <div class="accordion-content">
+                                        <p>피벗 테이블, 주요 함수 활용, 조건부 서식</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">결과 (Results)</button>
+                                    <div class="accordion-content">
+                                        <p>비기술 사용자도 이해 가능한 리포트 구성</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">제안 (Recommendation)</button>
+                                    <div class="accordion-content">
+                                        <p>실무 보고서 형태 이해</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">사용 기술 (Tech)</button>
+                                    <div class="accordion-content">
+                                        <p>Excel</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card" data-tech="tableau">
+                        <h3>Tableau 대시보드 시각화</h3>
+                        <p class="project-summary">분석 결과를 시각적으로 표현하여 데이터의 흐름과 핵심 지표를 전달</p>
+                        <button class="expand-btn">자세히 보기</button>
+                        <div class="project-details">
+                            <div class="accordion">
+                                <div class="accordion-item">
+                                    <button class="accordion-header">목표 (Goal)</button>
+                                    <div class="accordion-content">
+                                        <p>주요 지표 한눈에 파악, 사용자 관점의 대시보드 구성</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">데이터 (Data)</button>
+                                    <div class="accordion-content">
+                                        <p>분석 결과 데이터</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">방법 (Method)</button>
+                                    <div class="accordion-content">
+                                        <p>KPI 요약, 추세 분석 차트, 필터 기반 인터랙션</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">결과 (Results)</button>
+                                    <div class="accordion-content">
+                                        <p>데이터 스토리텔링 경험</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">제안 (Recommendation)</button>
+                                    <div class="accordion-content">
+                                        <p>시각적 커뮤니케이션 역량 강화</p>
+                                    </div>
+                                </div>
+                                <div class="accordion-item">
+                                    <button class="accordion-header">사용 기술 (Tech)</button>
+                                    <div class="accordion-content">
+                                        <p>Tableau</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="visualization">
+            <div class="container">
+                <h2>Visualization</h2>
+                <p>아래 차트는 데모 데이터(가상 데이터)를 기반으로 한 샘플 시각화입니다.</p>
+                <div class="chart-container">
+                    <canvas id="kpiChart"></canvas>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact</h2>
+                <div class="contact-info">
+                    <p><strong>Email:</strong> <a href="mailto:ckdgy464@naver.com">ckdgy464@naver.com</a></p>
+                    <p><strong>GitHub:</strong> <a href="https://github.com/LCH991115" target="_blank">https://github.com/LCH991115</a></p>
+                    <p><strong>Tableau Public:</strong> <a href="https://public.tableau.com/profile/ckdgy464" target="_blank">https://public.tableau.com/profile/ckdgy464</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 데이터 분석가 포트폴리오. All rights reserved.</p>
+    </footer>
+
+    <button id="back-to-top" aria-label="맨 위로">↑</button>
+
+    <!-- 외부 리소스: Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
