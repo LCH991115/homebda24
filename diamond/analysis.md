@@ -1,8 +1,8 @@
 # Diamonds Dataset EDA
 
-## Descriptive Statistics
+## 기술 통계
 
-### Overall Describe
+### 전체 설명
 |       |        carat |       depth |       table |    price |           x |           y |            z |
 |:------|-------------:|------------:|------------:|---------:|------------:|------------:|-------------:|
 | count | 53940        | 53940       | 53940       | 53940    | 53940       | 53940       | 53940        |
@@ -14,7 +14,7 @@
 | 75%   |     1.04     |    62.5     |    59       |  5324.25 |     6.54    |     6.54    |     4.04     |
 | max   |     5.01     |    79       |    95       | 18823    |    10.74    |    58.9     |    31.8      |
 
-### Mean Values
+### 평균 값
 |       |          0 |
 |:------|-----------:|
 | carat |    0.79794 |
@@ -25,7 +25,7 @@
 | y     |    5.73453 |
 | z     |    3.53873 |
 
-### Standard Deviation
+### 표준 편차
 |       |           0 |
 |:------|------------:|
 | carat |    0.474011 |
@@ -36,7 +36,7 @@
 | y     |    1.14213  |
 | z     |    0.705699 |
 
-### Median Values
+### 중앙값
 |       |       0 |
 |:------|--------:|
 | carat |    0.7  |
@@ -47,7 +47,7 @@
 | y     |    5.71 |
 | z     |    3.53 |
 
-### Minimum Values
+### 최소 값
 |       |     0 |
 |:------|------:|
 | carat |   0.2 |
@@ -58,7 +58,7 @@
 | y     |   0   |
 | z     |   0   |
 
-### Maximum Values
+### 최대 값
 |       |        0 |
 |:------|---------:|
 | carat |     5.01 |
@@ -69,12 +69,12 @@
 | y     |    58.9  |
 | z     |    31.8  |
 
-## Visualizations
+## 시각화
 
-### Histogram of Diamond Prices
-![Histogram of Prices](images/hist_price.png)
+### 다이아몬드 가격 히스토그램
+![가격 히스토그램](images/hist_price.png)
 
-#### Pivot Table: Mean Price by Cut
+#### 피봇 테이블: 컷별 평균 가격
 | cut       |   price |
 |:----------|--------:|
 | Ideal     | 3457.54 |
@@ -83,10 +83,10 @@
 | Good      | 3928.86 |
 | Fair      | 4358.76 |
 
-### Scatter Plot of Carat vs Price
-![Scatter Plot](images/scatter_carat_price.png)
+### 캐럿 vs 가격 산점도
+![산점도](images/scatter_carat_price.png)
 
-#### Cross Tab: Count by Cut and Color
+#### 교차표: 컷과 색상별 개수
 | cut       |    D |    E |    F |    G |    H |    I |   J |
 |:----------|-----:|-----:|-----:|-----:|-----:|-----:|----:|
 | Ideal     | 2834 | 3903 | 3826 | 4884 | 3115 | 2093 | 896 |
@@ -95,10 +95,10 @@
 | Good      |  662 |  933 |  909 |  871 |  702 |  522 | 307 |
 | Fair      |  163 |  224 |  312 |  314 |  303 |  175 | 119 |
 
-### Box Plot of Price by Cut
-![Box Plot](box_price_cut.png)
+### 컷별 가격 박스플롯
+![박스플롯](images/box_price_cut.png)
 
-#### Pivot Table: Median Price by Cut and Clarity
+#### 피봇 테이블: 컷과 투명도별 중앙값 가격
 | cut       |     IF |   VVS1 |   VVS2 |    VS1 |   VS2 |    SI1 |    SI2 |     I1 |
 |:----------|-------:|-------:|-------:|-------:|------:|-------:|-------:|-------:|
 | Ideal     | 1022.5 | 1114   |   1330 | 1813   |  1689 | 2537   | 4059.5 | 3673.5 |
@@ -107,10 +107,10 @@
 | Good      | 1806   |  981.5 |   1817 | 2434   |  3246 | 2724.5 | 3770   | 3118.5 |
 | Fair      | 1849   | 2797   |   2484 | 2829.5 |  3190 | 3528.5 | 3681   | 2397   |
 
-### Bar Plot of Count by Color
-![Bar Plot](bar_color.png)
+### 색상별 개수 바플롯
+![바플롯](images/bar_color.png)
 
-#### Cross Tab: Count by Color and Cut
+#### 교차표: 색상과 컷별 개수
 | color   |   Ideal |   Premium |   Very Good |   Good |   Fair |
 |:--------|--------:|----------:|------------:|-------:|-------:|
 | D       |    2834 |      1603 |        1513 |    662 |    163 |
@@ -121,10 +121,10 @@
 | I       |    2093 |      1428 |        1204 |    522 |    175 |
 | J       |     896 |       808 |         678 |    307 |    119 |
 
-### Correlation Heatmap
-![Heatmap](heatmap_corr.png)
+### 상관관계 히트맵
+![히트맵](images/heatmap_corr.png)
 
-#### Pivot Table: Mean Carat by Cut and Color
+#### 피봇 테이블: 컷과 색상별 평균 캐럿
 | cut       |        D |        E |        F |        G |        H |        I |       J |
 |:----------|---------:|---------:|---------:|---------:|---------:|---------:|--------:|
 | Ideal     | 0.565766 | 0.578401 | 0.655829 | 0.700715 | 0.799525 | 0.913029 | 1.06359 |
