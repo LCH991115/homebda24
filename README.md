@@ -199,8 +199,8 @@ README.md
 
 ## 📬 Contact
 
-* Email: [your_email@example.com](mailto:your_email@example.com)
-* GitHub: [https://github.com/yourid](https://github.com/yourid)
-* Tableau Public: [https://public.tableau.com/profile/yourid](https://public.tableau.com/profile/yourid)
+* Email: [your_email@example.com](mailto:ckdgy464@naver.com)
+* GitHub: [https://github.com/yourid](https://github.com/LCH991115)
+* Tableau Public: [https://public.tableau.com/profile/ckdgy464](https://public.tableau.com/profile/ckdgy464)
 
 ---
